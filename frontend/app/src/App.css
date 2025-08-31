@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@layer utilities {
+  /* Make scrollbar thin and minimal */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  /* Track (background) */
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent; /* or use a subtle gray like #f1f1f1 */
+  }
+
+  /* Handle (the draggable part) */
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.6); /* gray-400 with opacity */
+    border-radius: 9999px; /* fully rounded */
+  }
+
+  /* Handle on hover */
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.9); /* darker on hover */
+  }
+
+  /* Firefox support */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.6) transparent;
+  }
+}
+
+pre {
+  white-space: pre-wrap;   /* Preserve line breaks, allow wrapping */
+  word-wrap: break-word;   /* Break long words */
+}
