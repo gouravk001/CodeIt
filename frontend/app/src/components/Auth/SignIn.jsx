@@ -13,6 +13,7 @@ export default function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      
       const { data } = await api.post("/user/login", { email, password });
       localStorage.setItem("token", data.token);
       toast.success("Login successful!");

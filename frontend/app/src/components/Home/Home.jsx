@@ -101,6 +101,7 @@ export const Home = () => {
               >
                 Logout
               </button>
+              
               <p>Total Problems Solved - {user.solvedProblems.length}</p>
               <div className="h-4/6 flex flex-col gap-6 p-5 mt-auto rounded-2xl border-2 overflow-x-hidden overflow-y-scroll scrollbar-thin">
                 {user.solvedProblems.map((problem, idx) => (
@@ -140,7 +141,8 @@ export const Home = () => {
           </>
         )}
       </div>
-      <div className="h-full w-full bg-zinc-800 p-6">
+      <div className="h-full w-full bg-zinc-800 p-6 pt-2">
+
         <div className="flex flex-col gap-5 h-full w-full border-2 border-white rounded-2xl p-5 overflow-x-hidden overflow-y-scroll scrollbar-thin">
           {problems.map((problem, idx) => {
             return createProblemCard(problem, idx);
