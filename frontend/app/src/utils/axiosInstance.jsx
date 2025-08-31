@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://codeit-tqhd.onrender.com",
 });
 
 api.interceptors.response.use(
