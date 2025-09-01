@@ -57,7 +57,7 @@ export const IDE = ({ id }) => {
         toast.error(`${verdict}!`);
       }
     } catch (err) {
-      
+        toast.error("Error running the code, please check your code and try again.");
         console.error(err);
       
     }
