@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const navigate = useNavigate();
+
 
 const api = axios.create({
   baseURL: "https://codeit-tqhd.onrender.com",
@@ -11,7 +11,7 @@ api.interceptors.response.use(
   (error) => {
     if (error.response && error.response.status === 401) {
       localStorage.removeItem("token");
-      navigate("/signIn");
+      window.location.href = "/signIn";
     }
     return Promise.reject(error);
   }
