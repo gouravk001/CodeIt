@@ -26,4 +26,4 @@ All the API calls to the judge0 is done in the backend and evaluation and storin
 
 I also used JWT( Json Web Token ) to allow session persistence after Signup.
 
-This is the link to my project - (https://codeit-frontend.onrender.com)
+This is the link to my project - (https://codeit-jet.vercel.app)
